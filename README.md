@@ -457,9 +457,10 @@ $: v-cli -s aaaaa -d 12
  size:  medium2
  drink:  true
 ```
-  size 选项: 没有输入值则报错, 如果不符合正则匹配的话, 值为默认值. 符合的话, 就是正则匹配的值, 比如 执行命令: v-cli -s small -d 12, 那么size的值为 small.
-  drink选项: 没有输入值则报 undefined, 不符合正则为 true, 符合正则则为正则的值. 比如执行命令: v-cli -s small -d coke, 则drink的值为 coke.
-
+```
+size 选项: 没有输入值则报错, 如果不符合正则匹配的话, 值为默认值. 符合的话, 就是正则匹配的值, 比如 执行命令: v-cli -s small -d 12, 那么size的值为 small.
+drink选项: 没有输入值则报 undefined, 不符合正则为 true, 符合正则则为正则的值. 比如执行命令: v-cli -s small -d coke, 则drink的值为 coke.
+```
 #### 可变参数
 
   命令command有且只有最后一个参数可变的, 要使参数变量可变, 必须将 ... 附加到参数名称.
