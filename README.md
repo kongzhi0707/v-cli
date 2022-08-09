@@ -3,16 +3,16 @@
 
 <div id="back"></div>
 
-- [一) 创建项目目录及初始化](#id1) <br />
-- [二) 给命令行工具起名字为 v-cli](#id2) <br />
-- [三) process.argv 读取参数](#id3) <br />
-- [四) 学习 commander.js (命令行参数)](#id4) <br />
-- [五）学习 Inquirer.js --- 命令行交互工具](#id5) <br />
-- [六) 学习 chalk(用于美化控制台输出的语句)](#id6) <br />
+- [一) 创建项目目录及初始化](#id1)
+- [二) 给命令行工具起名字为 v-cli](#id2)
+- [三) process.argv 读取参数](#id3)
+- [四) 学习 commander.js (命令行参数)](#id4)
+- [五）学习 Inquirer.js --- 命令行交互工具](#id5)
+- [六) 学习 chalk(用于美化控制台输出的语句)](#id6)
 
-  前端日常开发中, 会碰到各种各样的cli工具, 比如vue中 有 @vue/cli, react 中有 create-react-app, 我们只需要一行命令就可以创建我们的vue或react的脚手架. 因此会大大提高我们的开发效率, 因此我们需要学习在node中编写cli命令行工具方便我们日常的学习及开发对应的工具.
+前端日常开发中, 会碰到各种各样的cli工具, 比如vue中 有 @vue/cli, react 中有 create-react-app, 我们只需要一行命令就可以创建我们的vue或react的脚手架. 因此会大大提高我们的开发效率, 因此我们需要学习在node中编写cli命令行工具方便我们日常的学习及开发对应的工具.
 
-  我们要如何开发我们的cli命令工具呢?
+我们要如何开发我们的cli命令工具呢?
 
 #### <div id="id1">一) 创建项目目录及初始化 <a href="#back"> 回到顶部</a></div>
 
@@ -49,7 +49,7 @@ $ test-cli % npm run hello
 
 hello world
 ```
-#### 二) <div id="id2">给命令行工具起名字为 v-cli <a href="#back"> 回到顶部</a></div>
+#### 二) <div id="id2"> 给命令行工具起名字为 v-cli <a href="#back"> 回到顶部</a></div>
 
 如上是平时打包使用的命令行, 我们现在想在命令行中 和 create-react-app 类似 执行 v-cli 就能执行我们的index.js 代码, 因此我们暂时给我们的命令行工具起名为 v-cli. 我们目的想在命令中执行 v-cli, 就能输出 "hello world".
 
@@ -435,7 +435,7 @@ $: v-cli -c 12
  verbosity: 0
  args: undefined
 ```
- #### 正则表达式
+#### 正则表达式
 ```
 #!/usr/bin/env node
 var program = require('commander');
@@ -783,7 +783,7 @@ inquirer.prompt([
 ```
 执行效果如下:
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/1.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/1.jpg" /> <br />
 
 #### 添加分隔符, 代码如下:
 ```
@@ -806,7 +806,7 @@ inquirer.prompt([
   console.log('---answers---', answers);
 })
 ```
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/2.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/2.jpg" /> <br />
 
 #### 5) 有下标的单选项 (type为rawlist)
 ```
@@ -830,7 +830,7 @@ inquirer.prompt([
 ```
 执行效果如下:
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/3.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/3.jpg" /> <br />
 
 #### 6) 多选项 (type为checkbox)
 ```
@@ -853,7 +853,7 @@ inquirer.prompt([
 ```
 执行结果如下:
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/4.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/4.jpg" /> <br />
 
 #### 7) 确认框 (type 为 confirm)
 ```
@@ -872,7 +872,7 @@ inquirer.prompt([
 ```
 执行结果如下:
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/5.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/5.jpg" /> <br />
 
 #### 8) 校验输入 
 ```
@@ -897,7 +897,7 @@ inquirer.prompt([
 ```
 执行结果如下, 比如输入 12345, 会有如下提示:
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/6.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/6.jpg" /> <br />
 
 #### <div id="id6">六) 学习 chalk(用于美化控制台输出的语句) <a href="#back"> 回到顶部</a></div>
 
@@ -955,7 +955,7 @@ import chalk from 'chalk';
 console.log(chalk.bold.blueBright.underline('---- Hello Chalk ----\n'));
 console.log(chalk.blueBright.bold.underline('---- Hello Chalk ----\n'));
 ```
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/7.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/7.jpg" /> <br />
 
 如果出现调用多个颜色函数的话，以最右边的为准；如下代码：
 ```
@@ -966,7 +966,7 @@ import chalk from 'chalk';
 console.log(chalk.blueBright.bold.underline.blue.redBright('---- Hello Chalk 3----\n'));
 // 最终输出：红色
 ```
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/8.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/8.jpg" /> <br />
 
 #### 6.1）修饰器
 
@@ -1002,7 +1002,7 @@ console.log(chalk.strikethrough('---- Hello Chalk 11----\n'));
 ```
 执行 v-cli 命令如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/9.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/9.jpg" /> <br />
 
 #### 6.2）内置颜色 (colors)
 
@@ -1043,7 +1043,7 @@ console.log(chalk.whiteBright('---- whiteBright亮白----'));
 ```
 执行 v-cli 命令打印如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/10.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/10.jpg" /> <br />
 
 #### 6.3）内置的背景色
 
@@ -1089,7 +1089,7 @@ console.log(chalk.bgWhiteBright('---- bgWhiteBright----'));
 ```
 执行结果如下所示：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/11.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/11.jpg" /> <br />
 
 #### 6.4）使用rgb和hex自定义字体颜色，bgRgb和bgHex自定义背景颜色
 
@@ -1107,7 +1107,7 @@ console.log(chalk.bgRgb(9, 218, 158).visible('---- Hello Chalk 21 ----'))
 ```
 执行 v-cli, 结果如下所示：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/test-cli/master/images/12.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/12.jpg" /> <br />
 
 
 
