@@ -956,7 +956,7 @@ import chalk from 'chalk';
 console.log(chalk.bold.blueBright.underline('---- Hello Chalk ----\n'));
 console.log(chalk.blueBright.bold.underline('---- Hello Chalk ----\n'));
 ```
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/7.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/7.png" /> <br />
 
 如果出现调用多个颜色函数的话，以最右边的为准；如下代码：
 ```
@@ -967,7 +967,7 @@ import chalk from 'chalk';
 console.log(chalk.blueBright.bold.underline.blue.redBright('---- Hello Chalk 3----\n'));
 // 最终输出：红色
 ```
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/8.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/8.png" /> <br />
 
 #### 6.1）修饰器
 
@@ -1003,7 +1003,7 @@ console.log(chalk.strikethrough('---- Hello Chalk 11----\n'));
 ```
 执行 v-cli 命令如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/9.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/9.png" /> <br />
 
 #### 6.2）内置颜色 (colors)
 
@@ -1044,7 +1044,7 @@ console.log(chalk.whiteBright('---- whiteBright亮白----'));
 ```
 执行 v-cli 命令打印如下：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/10.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/10.png" /> <br />
 
 #### 6.3）内置的背景色
 
@@ -1090,7 +1090,7 @@ console.log(chalk.bgWhiteBright('---- bgWhiteBright----'));
 ```
 执行结果如下所示：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/11.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/11.png" /> <br />
 
 #### 6.4）使用rgb和hex自定义字体颜色，bgRgb和bgHex自定义背景颜色
 
@@ -1108,7 +1108,7 @@ console.log(chalk.bgRgb(9, 218, 158).visible('---- Hello Chalk 21 ----'))
 ```
 执行 v-cli, 结果如下所示：
 
-<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/12.jpg" /> <br />
+<img src="https://raw.githubusercontent.com/kongzhi0707/v-cli/master/images/12.png" /> <br />
 
 
 
