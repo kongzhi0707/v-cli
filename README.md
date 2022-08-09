@@ -49,7 +49,7 @@ $ test-cli % npm run hello
 
 hello world
 ```
-#### 二) <div id="id2"> 给命令行工具起名字为 v-cli <a href="#back"> 回到顶部</a></div>
+#### <div id="id2">二) 给命令行工具起名字为 v-cli <a href="#back"> 回到顶部</a></div>
 
 如上是平时打包使用的命令行, 我们现在想在命令行中 和 create-react-app 类似 执行 v-cli 就能执行我们的index.js 代码, 因此我们暂时给我们的命令行工具起名为 v-cli. 我们目的想在命令中执行 v-cli, 就能输出 "hello world".
 
