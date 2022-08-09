@@ -1,0 +1,21 @@
+{
+  "name": "test-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "v-cli": "index.js"
+  },
+  "scripts": {
+    "cli": "v-cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "colors": "^1.4.0",
+    "commander": "^9.4.0",
+    "inquirer": "^8.2.4"
+  },
+  "type": "module"
+}
